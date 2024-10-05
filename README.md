@@ -1,3 +1,3 @@
-APP HOMR STORE
+APP HOME STORE
 
 Desarrolladoras: Cócaro Lucia - Nieto Valentina
