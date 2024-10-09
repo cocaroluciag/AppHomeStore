@@ -63,42 +63,46 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Views\AcercaPage.xaml">
+	  <MauiXaml Update="mvvm\Views\AcercaPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\AgregarProductoPage.xaml">
+	  <MauiXaml Update="mvvm\Views\AgregarProductoPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\AgregarUsuarioPage.xaml">
+	  <MauiXaml Update="mvvm\Views\AgregarUsuarioPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\CarritoPage.xaml">
+	  <MauiXaml Update="mvvm\Views\CarritoPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\LoginPage.xaml">
+	  <MauiXaml Update="mvvm\Views\LoginPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\MainPage.xaml">
+	  <MauiXaml Update="mvvm\Views\MainPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\ModificarProductoPage.xaml">
+	  <MauiXaml Update="mvvm\Views\ModificarProductoPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\ModificarUsuarioPage.xaml">
+	  <MauiXaml Update="mvvm\Views\ModificarUsuarioPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\ProductoDetallePage.xaml">
+	  <MauiXaml Update="mvvm\Views\ProductoDetallePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\ProductoListaPage.xaml">
+	  <MauiXaml Update="mvvm\Views\ProductoListaPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\UsuarioDetallePage.xaml">
+	  <MauiXaml Update="mvvm\Views\UsuarioDetallePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\UsuarioListaPage.xaml">
+	  <MauiXaml Update="mvvm\Views\UsuarioListaPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Services\" />
 	</ItemGroup>
 
 </Project>

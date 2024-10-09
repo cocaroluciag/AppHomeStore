@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppHomeStore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+9f1166971bf9aa15cd6f0126bb3868af876c6044")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+14eb872964657b9fecd0c6d6f329d91ad634c3c6")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppHomeStore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppHomeStore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
