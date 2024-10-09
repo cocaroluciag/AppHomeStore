@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppHomeStore.Models
+namespace AppHomeStore.mvvm.ViewModels
 {
-    internal class CarritoProducto
+    internal class AgregarUsuarioViewModel
     {
     }
 }

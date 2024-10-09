@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppHomeStore.ViewModels
+namespace AppHomeStore.mvvm.ViewModels
 {
-    internal class UsuarioListaViewModel
+    internal class ProductoListaViewModel
     {
     }
 }

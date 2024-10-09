@@ -6,40 +6,40 @@
     <ActiveDebugProfile>Windows Machine</ActiveDebugProfile>
   </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="Views\AcercaPage.xaml">
+    <MauiXaml Update="mvvm\Views\AcercaPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\AgregarProductoPage.xaml">
+    <MauiXaml Update="mvvm\Views\AgregarProductoPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\AgregarUsuarioPage.xaml">
+    <MauiXaml Update="mvvm\Views\AgregarUsuarioPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\CarritoPage.xaml">
+    <MauiXaml Update="mvvm\Views\CarritoPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\LoginPage.xaml">
+    <MauiXaml Update="mvvm\Views\LoginPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\MainPage.xaml">
+    <MauiXaml Update="mvvm\Views\MainPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\ModificarProductoPage.xaml">
+    <MauiXaml Update="mvvm\Views\ModificarProductoPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\ModificarUsuarioPage.xaml">
+    <MauiXaml Update="mvvm\Views\ModificarUsuarioPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\ProductoDetallePage.xaml">
+    <MauiXaml Update="mvvm\Views\ProductoDetallePage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\ProductoListaPage.xaml">
+    <MauiXaml Update="mvvm\Views\ProductoListaPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\UsuarioDetallePage.xaml">
+    <MauiXaml Update="mvvm\Views\UsuarioDetallePage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\UsuarioListaPage.xaml">
+    <MauiXaml Update="mvvm\Views\UsuarioListaPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>
