@@ -1,18 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace AppHomeStore.Models
 {
-    public class Usuario
+    public class LoginResponseDto
     {
-        public int IdUsuario { get; set; }
+        [Key]
+        public int idUsuario { get; set; }
         public string NombreUsuario { get; set; }
+        public bool Autenticado { get; set; }
         public string Correo { get; set; }
         public string NumeroTelefonico { get; set; }
         public string NroDocumento { get; set; }
-        // Nota: No incluimos Clave por razones de seguridad
+
+        [Required]
+        public string Clave { get; set; }
     }
 }
