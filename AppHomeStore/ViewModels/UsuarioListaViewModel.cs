@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 namespace AppHomeStore.ViewModels
 {
-    public class UsuarioListaViewModel : INotifyPropertyChanged
+    public class UsuarioViewModel : INotifyPropertyChanged
     {
         private int idUsuario;
         private string nombreUsuario;
@@ -67,6 +67,12 @@ namespace AppHomeStore.ViewModels
         protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        [RelayCommand]
+        public async Task GoToDetailAsync()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new UsuarioDetallePage(usuarioSeleccionado), true);
         }
     }
 }
