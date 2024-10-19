@@ -1,12 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AppHomeStore.Utils;
+using CommunityToolkit.Mvvm.Input;
 
-namespace AppHomeStore.ViewModels
+namespace AppHomeStore.ViewModels;
+
+public partial class ModificarProductoViewModel : BaseViewModel
 {
-    internal class ModificarProductoViewModel
+    public ModificarProductoViewModel()
     {
+      //  Title = Constants.AppName;
+    }
+
+    [RelayCommand]
+    private async Task Cancelar()
+    {
+        await Application.Current.MainPage.Navigation.PopAsync();
+    }
+
+    [RelayCommand]
+    private async Task Grabar()
+    {
+        await Application.Current.MainPage.DisplayAlert("Producto", "Producto modificado", "Aceptar");
     }
 }

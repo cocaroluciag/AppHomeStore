@@ -1,0 +1,37 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:AppHomeStore.ViewModels"
+             x:Class="AppHomeStore.Views.CarritoProductoPage"
+             Title="Detalle Carrito">
+    
+    <ContentPage.BindingContext>
+        <vm:CarritoProductoViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout Padding="10" BackgroundColor="#4C2F1D">
+        <Label Text="DETALLE CARRITO" FontSize="24" HorizontalOptions="Center" TextColor="Orange"/>
+        <Label Text="HOME" FontSize="60" HorizontalOptions="Center" TextColor="White"/>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+            <ImageButton Source="editar.png" HeightRequest="30" Command="{Binding EditarCarritoCommand}"/>
+            <ImageButton Source="eliminar.png" HeightRequest="30" Command="{Binding EliminarCarritoCommand}"/>
+        </StackLayout>
+
+        <StackLayout>
+          <Label Text="Detalle del Carrito" FontSize="24" HorizontalOptions="Center" />
+         <CollectionView ItemsSource="{Binding CarritoProducto}">
+            <CollectionView.ItemTemplate>
+                 <DataTemplate>
+                    <Frame Padding="10" Margin="5" BackgroundColor="SaddleBrown">
+                        <StackLayout>
+                            <Label Text="{Binding IdCarritoProducto}" />
+                            <Label Text="{Binding IdProducto}" />
+                            <Label Text="{Binding Cantidad}" />
+                        </StackLayout>
+                    </Frame>
+                 </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+   </StackLayout>
+</ContentPage>

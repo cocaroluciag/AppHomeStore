@@ -1,9 +1,14 @@
-namespace AppHomeStore.Views;
+using AppHomeStore.ViewModels;
+using AppHomeStore.Models;
 
+namespace AppHomeStore.Views;
 public partial class ProductoDetallePage : ContentPage
 {
-	public ProductoDetallePage()
+    ProductoDetalleViewModel viewModel;
+    public ProductoDetallePage(Producto producto)
 	{
-		InitializeComponent();
-	}
+        InitializeComponent();
+        BindingContext = new ProductoDetalleViewModel(producto);
+       // ProductoDetalleViewModel vm = new ProductoDetalleViewModel();
+    }
 }

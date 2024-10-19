@@ -2,11 +2,44 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppHomeStore.Views.MainPage"
-             Title="MainPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             xmlns:vm="clr-namespace:AppHomeStore.ViewModels"
+             xmlns:model="clr-namespace:AppHomeStore.Models"
+             x:DataType="vm:MainViewModel"
+             Title="{Binding Title}"
+             BackgroundColor="#623500">
+
+    <ScrollView Margin="10">
+        <VerticalStackLayout >
+            <Grid 
+                RowSpacing="10"
+                ColumnSpacing="10"
+                ColumnDefinitions="*,*" 
+                RowDefinitions="*,*,*,*,*"
+                Margin="0,30,0,0">
+
+                <Label Text="MENU DE OPCIONES" Grid.ColumnSpan="2" Grid.Row="0" />
+
+                <Button ContentLayout="Top, 5" Grid.Row="1" BackgroundColor="White" Margin="0,180,0,0" Text="Productos" HeightRequest="85" Command="{Binding GoToProductoListaCommand}">
+                    <Button.ImageSource>
+                        <FontImageSource Size="22" FontFamily="MaterialDesignIcons" Glyph="&#xe1bd;" />
+                    </Button.ImageSource>
+                </Button>
+                <Button ContentLayout="Top, 5" Grid.Column="1" Background="White" Margin="0,180,0,0" Grid.Row="1" Text="Usuarios" HeightRequest="85" Command="{Binding GoToUsuarioListaCommand}" >
+                    <Button.ImageSource>
+                        <FontImageSource Size="22" FontFamily="MaterialDesignIcons" Glyph="&#xe7fd;"/>
+                    </Button.ImageSource>
+                </Button>
+                <Button ContentLayout="Top, 5" Grid.Column="0" Grid.Row="2" Background="White" Text="Carrito" HeightRequest="85" Command="{Binding GoToCarritoCommand}">
+                    <Button.ImageSource>
+                        <FontImageSource Size="22" FontFamily="MaterialDesignIcons" Glyph="&#xe88e;" />
+                    </Button.ImageSource>
+                </Button>
+                <Button ContentLayout="Top, 5" Grid.Column="1" Grid.Row="2" Text="Acerca De" Background="White" HeightRequest="85" Command="{Binding GoToAcercaCommand}">
+                    <Button.ImageSource>
+                        <FontImageSource Size="22" FontFamily="MaterialDesignIcons" Glyph="&#xe9ba;" />
+                    </Button.ImageSource>
+                </Button>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
