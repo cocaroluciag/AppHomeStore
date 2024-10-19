@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:AppHomeStore.ViewModels"
+             xmlns:model="clr-namespace:AppHomeStore.Models"
+             x:DataType="viewmodel:LoginViewModel"
+             x:Class="AppHomeStore.Views.LoginPage"
+             Title="{Binding Title}"
+             BackgroundColor="#4C2F1D">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <!-- Título -->
+        <Label Text="HOME"
+               FontSize="30"
+               HorizontalOptions="Center"
+               TextColor="White"
+               FontAttributes="Bold"/>
+
+        <!-- Nombre de Usuario -->
+        <Label Text="Nombre de Usuario"
+               TextColor="Orange"
+               FontSize="Medium" />
+
+        <Entry Text="{Binding NombreUsuario}" 
+               Placeholder="Ingresa tu nombre de usuario"
+               PlaceholderColor="LightGray"
+               TextColor="White"
+               BackgroundColor="#4C2F1D"
+               FontSize="Medium"
+               HeightRequest="40"
+               Margin="0,0,0,10"/>
+
+        <!-- Contraseña -->
+        <Label Text="Contraseña"
+               TextColor="Orange"
+               FontSize="Medium" />
+
+        <Entry Text="{Binding Clave}" 
+               Placeholder="Ingresa tu contraseña" 
+               IsPassword="True"
+               PlaceholderColor="LightGray"
+               TextColor="White"
+               BackgroundColor="#4C2F1D"
+               FontSize="Medium"
+               HeightRequest="40"
+               Margin="0,0,0,20"/>
+
+        <Button Text="Iniciar Sesión"
+                TextColor="White"
+                BackgroundColor="#FFB485"
+                FontSize="Medium"
+                HeightRequest="50"
+                Command="{Binding LoginCommand}"/>
+    </VerticalStackLayout>
+</ContentPage>

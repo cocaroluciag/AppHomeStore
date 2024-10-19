@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:AppHomeStore.ViewModels"
+             xmlns:model="clr-namespace:AppHomeStore.Models"
+             x:DataType="viewmodel:UsuarioEditarViewModel"
+             x:Class="AppHomeStore.Views.UsuarioEditarPage"
+             Title="Editar Usuario"
+             BackgroundColor="#4C2F1D">
+
+    <VerticalStackLayout Padding="20">
+        <Label Text="Nombre de Usuario" TextColor="Orange" />
+        <Entry Text="{Binding Usuario.NombreUsuario}" />
+
+        <Label Text="Correo" TextColor="Orange" />
+        <Entry Text="{Binding Usuario.Correo}" />
+
+        <Label Text="Número de Teléfono" TextColor="Orange" />
+        <Entry Text="{Binding Usuario.NumeroTelefonico}" />
+
+        <Label Text="Documento" TextColor="Orange" />
+        <Entry Text="{Binding Usuario.NroDocumento}" />
+
+        <Label Text="Clave" TextColor="Orange" />
+        <Entry Text="{Binding Usuario.Clave}" IsPassword="True" />
+
+        <Button Text="Guardar Cambios" 
+                Command="{Binding EditarUserCommand}" 
+                BackgroundColor="#FFB485"
+                TextColor="White" />
+    </VerticalStackLayout>
+</ContentPage>
