@@ -15,7 +15,7 @@ namespace AppHomeStore.ViewModels
         public MainViewModel(ApiService apiService)
         {
             _apiService = apiService; // Inicializa ApiService
-            Title = "APP HOME STORE";
+            //Title = "APP HOME STORE";
 
             _httpClient = new HttpClient
             {
@@ -84,7 +84,13 @@ namespace AppHomeStore.ViewModels
         [RelayCommand]
         public async Task GoToAcerca()
         {
-            await Application.Current.MainPage.Navigation.PushAsync(new AcercaPage());
+            //await Application.Current.MainPage.Navigation.PushAsync(new AcercaPage());
+        }
+
+        [RelayCommand]
+        public async Task GoBack()
+        {
+          //  await Application.Current.MainPage.Navigation.PushAsync(new LoginPage());
         }
     }
 }
