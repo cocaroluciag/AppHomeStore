@@ -113,3 +113,4 @@ C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-android\r
 C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-android\resizetizer\sp\values\maui_colors.xml
 C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-android\resizetizer\f\OpenSans-Regular.ttf
 C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-android\resizetizer\f\OpenSans-Semibold.ttf
+C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-android\resizetizer\A52E68AE06E1868A-files.cache

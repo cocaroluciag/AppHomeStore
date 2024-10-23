@@ -6,9 +6,9 @@
     x:Class="AppHomeStore.AppShell">
 
     <FlyoutItem Title="Menu" Icon="icon.png">
-        <ShellContent ContentTemplate="{DataTemplate views:MainPage}" 
-         Route="MainPage"             />
+        <ShellContent ContentTemplate="{DataTemplate views:MainPage}" Route="MainPage" />
     </FlyoutItem>
+
     <FlyoutItem Title="Productos" Icon="products_icon.png">
         <ShellContent Title="Productos" ContentTemplate="{DataTemplate views:ProductoListaPage}" Route="ListaProductos" />
     </FlyoutItem>
@@ -21,8 +21,8 @@
         <ShellContent Title="Usuarios" ContentTemplate="{DataTemplate views:UsuarioListaPage}" Route="Usuarios" />
     </FlyoutItem>
 
-    <FlyoutItem Title="Acerca de" Icon="about_icon.png">
-        <ShellContent Title="Acerca de" ContentTemplate="{DataTemplate views:AcercaPage}" Route="Acerca" />
-    </FlyoutItem>
-
+    <!-- Ruta para la página de detalles del producto -->
+    <ShellContent Title="Detalle del Producto" 
+                  ContentTemplate="{DataTemplate views:ProductoDetallePage}" 
+                  Route="ProductoDetalle" />
 </Shell>

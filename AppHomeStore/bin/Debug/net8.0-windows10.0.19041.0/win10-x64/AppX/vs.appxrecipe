@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-10-19T03:20:45.522</Modified>
+      <Modified>2024-10-23T05:28:02.396</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-10-19T03:20:44.240</Modified>
+      <Modified>2024-10-23T03:11:28.172</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppHomeStore.runtimeconfig.json">
       <PackagePath>AppHomeStore.runtimeconfig.json</PackagePath>
-      <Modified>2024-10-18T07:54:12.886</Modified>
+      <Modified>2024-10-22T02:49:44.758</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppHomeStore.dll">
       <PackagePath>AppHomeStore.dll</PackagePath>
-      <Modified>2024-10-19T03:20:31.849</Modified>
+      <Modified>2024-10-23T05:27:56.880</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>AppHomeStore.exe</PackagePath>
-      <Modified>2024-10-19T03:20:32.208</Modified>
+      <Modified>2024-10-23T05:27:57.177</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -56,23 +56,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-10-18T07:34:57.337</Modified>
+      <Modified>2024-10-22T02:40:52.649</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-10-18T07:34:57.641</Modified>
+      <Modified>2024-10-22T02:40:52.728</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-10-18T07:34:57.865</Modified>
+      <Modified>2024-10-22T02:40:52.790</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-10-18T07:34:58.062</Modified>
+      <Modified>2024-10-22T02:40:52.899</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-10-18T07:34:59.458</Modified>
+      <Modified>2024-10-22T02:40:53.290</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\MaterialIcons-Regular.ttf">
+      <PackagePath>MaterialIcons-Regular.ttf</PackagePath>
+      <Modified>2024-10-22T20:13:50.086</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -84,223 +88,227 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-10-18T07:35:28.807</Modified>
+      <Modified>2024-10-23T00:47:32.816</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-10-18T07:35:27.969</Modified>
+      <Modified>2024-10-23T00:47:32.786</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-10-18T07:35:27.964</Modified>
+      <Modified>2024-10-23T00:47:32.786</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-10-18T07:35:27.895</Modified>
+      <Modified>2024-10-23T00:47:32.784</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-10-18T07:35:27.781</Modified>
+      <Modified>2024-10-23T00:47:32.780</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-10-18T07:35:27.719</Modified>
+      <Modified>2024-10-23T00:47:32.766</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.766</Modified>
+      <Modified>2024-10-23T00:47:32.804</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.762</Modified>
+      <Modified>2024-10-23T00:47:32.803</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.744</Modified>
+      <Modified>2024-10-23T00:47:32.801</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.752</Modified>
+      <Modified>2024-10-23T00:47:32.802</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.750</Modified>
+      <Modified>2024-10-23T00:47:32.802</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.777</Modified>
+      <Modified>2024-10-23T00:47:32.810</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.776</Modified>
+      <Modified>2024-10-23T00:47:32.809</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.770</Modified>
+      <Modified>2024-10-23T00:47:32.806</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.774</Modified>
+      <Modified>2024-10-23T00:47:32.809</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.772</Modified>
+      <Modified>2024-10-23T00:47:32.808</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.805</Modified>
+      <Modified>2024-10-23T00:47:32.813</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.798</Modified>
+      <Modified>2024-10-23T00:47:32.813</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.793</Modified>
+      <Modified>2024-10-23T00:47:32.813</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.792</Modified>
+      <Modified>2024-10-23T00:47:32.812</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.791</Modified>
+      <Modified>2024-10-23T00:47:32.812</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.787</Modified>
+      <Modified>2024-10-23T00:47:32.812</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.784</Modified>
+      <Modified>2024-10-23T00:47:32.811</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.778</Modified>
+      <Modified>2024-10-23T00:47:32.810</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.782</Modified>
+      <Modified>2024-10-23T00:47:32.811</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.780</Modified>
+      <Modified>2024-10-23T00:47:32.811</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.411</Modified>
+      <Modified>2024-10-23T00:47:32.795</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.274</Modified>
+      <Modified>2024-10-23T00:47:32.795</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.272</Modified>
+      <Modified>2024-10-23T00:47:32.794</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.270</Modified>
+      <Modified>2024-10-23T00:47:32.794</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.269</Modified>
+      <Modified>2024-10-23T00:47:32.793</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.529</Modified>
+      <Modified>2024-10-23T00:47:32.798</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.470</Modified>
+      <Modified>2024-10-23T00:47:32.798</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.431</Modified>
+      <Modified>2024-10-23T00:47:32.797</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.427</Modified>
+      <Modified>2024-10-23T00:47:32.796</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.424</Modified>
+      <Modified>2024-10-23T00:47:32.796</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.741</Modified>
+      <Modified>2024-10-23T00:47:32.801</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.735</Modified>
+      <Modified>2024-10-23T00:47:32.801</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.726</Modified>
+      <Modified>2024-10-23T00:47:32.800</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.714</Modified>
+      <Modified>2024-10-23T00:47:32.799</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.642</Modified>
+      <Modified>2024-10-23T00:47:32.798</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.267</Modified>
+      <Modified>2024-10-23T00:47:32.793</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.263</Modified>
+      <Modified>2024-10-23T00:47:32.793</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.223</Modified>
+      <Modified>2024-10-23T00:47:32.792</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.028</Modified>
+      <Modified>2024-10-23T00:47:32.791</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-10-18T07:35:27.977</Modified>
+      <Modified>2024-10-23T00:47:32.788</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\crear.scale-100.png">
       <PackagePath>crear.scale-100.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.845</Modified>
+      <Modified>2024-10-23T00:47:32.817</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.843</Modified>
+      <Modified>2024-10-23T00:47:32.766</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.841</Modified>
+      <Modified>2024-10-23T00:47:32.766</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.829</Modified>
+      <Modified>2024-10-23T00:47:32.750</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.827</Modified>
+      <Modified>2024-10-23T00:47:32.750</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.822</Modified>
+      <Modified>2024-10-23T00:47:32.735</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\editar.scale-100.png">
       <PackagePath>editar.scale-100.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.815</Modified>
+      <Modified>2024-10-23T00:47:32.818</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\eliminar.scale-100.png">
       <PackagePath>eliminar.scale-100.png</PackagePath>
-      <Modified>2024-10-18T07:35:28.813</Modified>
+      <Modified>2024-10-23T00:47:32.816</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\productoicon.scale-100.png">
+      <PackagePath>productoicon.scale-100.png</PackagePath>
+      <Modified>2024-10-23T00:47:32.817</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppHomeStore.deps.json">
       <PackagePath>AppHomeStore.deps.json</PackagePath>
-      <Modified>2024-10-19T03:20:39.943</Modified>
+      <Modified>2024-10-23T03:11:25.484</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

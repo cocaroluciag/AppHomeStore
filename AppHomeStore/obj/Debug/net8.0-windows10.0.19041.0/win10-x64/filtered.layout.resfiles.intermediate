@@ -1,3 +1,4 @@
+MaterialIcons-Regular.ttf
 OpenSans-Regular.ttf
 OpenSans-Semibold.ttf
 appicon.ico
@@ -54,6 +55,7 @@ dotnet_bot.scale-200.png
 dotnet_bot.scale-400.png
 editar.scale-100.png
 eliminar.scale-100.png
+productoicon.scale-100.png
 splashSplashScreen.scale-100.png
 splashSplashScreen.scale-125.png
 splashSplashScreen.scale-150.png

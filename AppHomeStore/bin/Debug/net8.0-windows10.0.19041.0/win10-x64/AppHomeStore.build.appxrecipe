@@ -55,6 +55,9 @@
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\MaterialIcons-Regular.ttf">
+      <PackagePath>MaterialIcons-Regular.ttf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
     </AppxPackagedFile>
@@ -222,6 +225,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\eliminar.scale-100.png">
       <PackagePath>eliminar.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\productoicon.scale-100.png">
+      <PackagePath>productoicon.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppHomeStore.deps.json">
       <PackagePath>AppHomeStore.deps.json</PackagePath>

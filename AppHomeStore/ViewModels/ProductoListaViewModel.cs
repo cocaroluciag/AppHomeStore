@@ -1,28 +1,37 @@
 ﻿using AppHomeStore.Models;
-using AppHomeStore.Utils;
 using AppHomeStore.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System.Collections.ObjectModel;
-using System.Text.Json;
+using System.Threading.Tasks;
 
 namespace AppHomeStore.ViewModels;
 
 public partial class ProductoListaViewModel : BaseViewModel
 {
+    [ObservableProperty]
+    private ObservableCollection<Producto> _productos;
 
-    [ObservableProperty] private ObservableCollection<Producto> _productos;
-    [ObservableProperty] private Producto producto;
-    [ObservableProperty] private bool isRefreshing;
+    [ObservableProperty]
+    private bool isRefreshing;
+
+    [ObservableProperty]
+    private Producto productoSeleccionado;
 
     public Command CrearProductoCommand { get; }
     public Command OnVolverCommand { get; }
 
     public ProductoListaViewModel()
     {
-      //  Title = Constants.AppName;
-
         Task.Run(async () => { await GetProductos(); }).Wait();
+    }
+
+    partial void OnProductoSeleccionadoChanged(Producto value)
+    {
+        if (value != null)
+        {
+            GoToDetalleCommand.Execute(null);  // Llama al comando cuando un producto es seleccionado
+        }
     }
 
     [RelayCommand]
@@ -43,8 +52,13 @@ public partial class ProductoListaViewModel : BaseViewModel
     [RelayCommand]
     private async Task GoToDetalle()
     {
-        await Application.Current.MainPage.Navigation.PushAsync(new ProductoDetallePage(producto));
-    
+        if (productoSeleccionado == null)
+        {
+            return;
+        }
+
+        // Navega a la página de detalles del producto seleccionado
+        await Application.Current.MainPage.Navigation.PushAsync(new ProductoDetallePage(productoSeleccionado), true);
     }
 
     [RelayCommand]
@@ -56,8 +70,6 @@ public partial class ProductoListaViewModel : BaseViewModel
     [RelayCommand]
     private async Task OnVolver()
     {
-        // await Shell.Current.GoToAsync("ProductoListaPage()");
         await Application.Current.MainPage.Navigation.PopAsync();
-
     }
 }

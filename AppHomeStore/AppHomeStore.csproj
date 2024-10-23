@@ -57,9 +57,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\MaterialIcons-Regular.ttf" />
 	  <None Remove="Resources\Images\crear.png" />
 	  <None Remove="Resources\Images\editar.png" />
 	  <None Remove="Resources\Images\eliminar.png" />
+	  <None Remove="Resources\Images\productoicon.png" />
 	</ItemGroup>
 
 	<ItemGroup>
