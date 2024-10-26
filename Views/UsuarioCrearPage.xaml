@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:AppHomeStore.ViewModels"
+             xmlns:model="clr-namespace:AppHomeStore.Models"
+             x:Class="AppHomeStore.Views.UsuarioCrearPage"
+             Title="Crear Usuario"
+             BackgroundColor="#4C2F1D">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <Label Text="Nombre de Usuario" TextColor="Orange"/>
+        <Entry Placeholder="Ingrese el nombre de usuario"
+               Text="{Binding NombreUsuario}" />
+
+        <Label Text="Correo" TextColor="Orange"/>
+        <Entry Placeholder="Ingrese el Correo"
+               Text="{Binding Correo}" />
+
+        <Label Text="Número de Teléfono" TextColor="Orange"/>
+        <Entry Placeholder="Ingrese su Número de Teléfono"
+               Text="{Binding NumeroTelefonico}" />
+
+        <Label Text="Documento" TextColor="Orange"/>
+        <Entry Placeholder="Ingrese su Número de Documento"
+               Text="{Binding NroDocumento}" />
+
+        <Label Text="Contraseña" TextColor="Orange"/>
+        <Entry Placeholder="Ingrese la contraseña"
+               Text="{Binding Clave}"
+               IsPassword="True" />
+
+        <Label Text="Confirmar Contraseña" TextColor="Orange"/>
+        <Entry Placeholder="Confirme la contraseña"
+               Text="{Binding ConfirmarClave}"
+               IsPassword="True" />
+
+        <Button Text="Crear Usuario"
+                Command="{Binding AddUserCommand}"
+                BackgroundColor="#FFB485"
+                TextColor="White" />
+    </VerticalStackLayout>
+</ContentPage>

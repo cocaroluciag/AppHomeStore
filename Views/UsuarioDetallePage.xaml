@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:AppHomeStore.ViewModels"
+             xmlns:model="clr-namespace:AppHomeStore.Models"
+             x:DataType="viewmodel:UsuarioDetalleViewModel"
+             x:Class="AppHomeStore.Views.UsuarioDetallePage"
+             Title="Detalles del Usuario"
+             BackgroundColor="#4C2F1D">
+
+    <VerticalStackLayout Padding="20" Spacing="10">
+        <Label Text="Nombre de Usuario" TextColor="Orange" />
+        <Label Text="{Binding Usuario.NombreUsuario}" TextColor="LightGray" />
+
+        <Label Text="Correo" TextColor="Orange" />
+        <Label Text="{Binding Usuario.Correo}" TextColor="LightGray" />
+
+        <Label Text="Número de Teléfono" TextColor="Orange" />
+        <Label Text="{Binding Usuario.NumeroTelefonico}" TextColor="LightGray" />
+
+        <Label Text="Documento" TextColor="Orange" />
+        <Label Text="{Binding Usuario.NroDocumento}" TextColor="LightGray" />
+
+        <!-- Botones alineados y ajustados -->
+        <HorizontalStackLayout Spacing="10">
+            <Button
+                Text="Borrar Usuario"
+                HorizontalOptions="FillAndExpand"
+                HeightRequest="50"
+                BackgroundColor="#FFB485"
+                TextColor="White"
+                Command="{Binding DeleteUsuarioCommand}" />
+
+            <Button
+                Text="Editar usuario"
+                HorizontalOptions="FillAndExpand"
+                HeightRequest="50"
+                BackgroundColor="#FFB485"
+                TextColor="White"
+                Command="{Binding GoToEditUserCommand}" />
+
+            <Button 
+                Text="Volver" 
+                HorizontalOptions="FillAndExpand"
+                HeightRequest="50"
+                BackgroundColor="#FFB485"
+                TextColor="White"
+                Command="{Binding GoBackCommand}" />
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
