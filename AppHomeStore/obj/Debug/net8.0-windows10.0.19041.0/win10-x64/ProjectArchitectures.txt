@@ -1,1 +1,0 @@
-C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\AppHomeStore.csproj;x64

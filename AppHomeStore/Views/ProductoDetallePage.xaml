@@ -1,12 +1,27 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppHomeStore.Views.ProductoDetallePage"
-             Title="ProductoDetallePage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Detalle Producto">
+    <StackLayout Padding="10" BackgroundColor="#4C2F1D">
+        <Label Text="DETALLE PRODUCTO" FontSize="24" HorizontalOptions="Center" TextColor="Orange"/>
+        <Label Text="HOME" FontSize="60" HorizontalOptions="Center" TextColor="White"/>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+            <ImageButton Source="editar.png" HeightRequest="30" Command="{Binding EditarProductoCommand}"/>
+            <ImageButton Source="eliminar.png" HeightRequest="30" Command="{Binding EliminarProductoCommand}"/>
+        </StackLayout>
+
+        <Frame BackgroundColor="White" Padding="10">
+            <StackLayout>
+                <Image Source="{Binding  Producto.Imagen}" HeightRequest="100"/>
+                <Label Text="{Binding Producto.Nombre}" FontSize="24" TextColor="Black"/>
+                <Label Text="{Binding Producto.Descripcion}" FontSize="14" TextColor="Black"/>
+                <Label Text="{Binding Producto.Categoria}" FontSize="14" TextColor="Black"/>
+                <Label Text="{Binding Producto.Stock}" FontSize="14" TextColor="Black"/>
+                <Label Text="{Binding Producto.Precio , StringFormat='${0}'}" FontSize="30" TextColor="Orange"/>
+            </StackLayout>
+        </Frame>
+        
+        <Button Text="Volver" Command="{Binding OnVolverCommand}" BackgroundColor="#FFB485"/>
+    </StackLayout>
 </ContentPage>

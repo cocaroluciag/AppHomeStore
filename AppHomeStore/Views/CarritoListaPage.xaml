@@ -1,0 +1,40 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppHomeStore.Views.CarritoListaPage"
+             Title="Carritos">
+    <StackLayout Padding="10" BackgroundColor="#4C2F1D">
+        <Label Text="LISTA CARRITOS" FontSize="24" HorizontalOptions="Center" TextColor="Orange"/>
+        <Label Text="HOME" FontSize="60" HorizontalOptions="Center" TextColor="White"/>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+            <ImageButton Source="crear.png" HeightRequest="30" Command="{Binding CreateCarritoCommand}"/>
+        </StackLayout>
+
+        <!-- Vista de refresco y colección de productos -->
+        <RefreshView Command="{Binding GetCarritosCommand}" IsRefreshing="{Binding IsRefreshing}">
+            <CollectionView 
+                        ItemsSource="{Binding Carritos}" 
+                        SelectionMode="Single" 
+                        SelectionChangedCommand="{Binding GoToDetalleCommand}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BackgroundColor="White" Padding="5">
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout>
+                                    <Label Text="Id Carrito:" />
+                                    <Label Text="{Binding IdCarrito}" FontSize="16" TextColor="Black"/>
+                                    <Label Text="Id Usuario:" />
+                                    <Label Text="{Binding IdUsuario}" FontSize="14" TextColor="Orange"/>
+                                    <Label Text="Fecha Creación:" />
+                                    <Label Text="{Binding FechaCreacion}" FontSize="14" TextColor="Orange"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+
+        <Button Text="Volver" Command="{Binding OnVolverCommand}" BackgroundColor="#FFB485"/>
+    </StackLayout>
+</ContentPage>
