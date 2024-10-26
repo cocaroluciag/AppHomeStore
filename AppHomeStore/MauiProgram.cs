@@ -58,7 +58,7 @@ namespace AppHomeStore
 
 
             //Sección Login
-            builder.Services.AddTransient<LoginPage>();
+         //   builder.Services.AddTransient<LoginPage>();
 
             //Sección Productos
             builder.Services.AddTransient<ProductoListaPage>();

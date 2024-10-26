@@ -1,14 +1,16 @@
-using AppHomeStore.ViewModels;
 using AppHomeStore.Models;
+using AppHomeStore.ViewModels;
 
 namespace AppHomeStore.Views;
+
 public partial class ProductoDetallePage : ContentPage
 {
-    ProductoDetalleViewModel viewModel;
-    public ProductoDetallePage(Producto producto)
-	{
+    public ProductoDetallePage(Producto param)
+    {
         InitializeComponent();
-        BindingContext = new ProductoDetalleViewModel(producto);
-       // ProductoDetalleViewModel vm = new ProductoDetalleViewModel();
+
+        ProductoDetalleViewModel vm = new ProductoDetalleViewModel();
+        this.BindingContext = vm;
+        vm.Producto = param;  // Asignas el producto pasado como parámetro
     }
 }
