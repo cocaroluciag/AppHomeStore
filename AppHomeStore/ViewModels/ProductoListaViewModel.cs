@@ -5,71 +5,87 @@ using CommunityToolkit.Mvvm.Input;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 
-namespace AppHomeStore.ViewModels;
-
-public partial class ProductoListaViewModel : BaseViewModel
+namespace AppHomeStore.ViewModels
 {
-    [ObservableProperty]
-    private ObservableCollection<Producto> _productos;
-
-    [ObservableProperty]
-    private bool isRefreshing;
-
-    [ObservableProperty]
-    private Producto productoSeleccionado;
-
-    public Command CrearProductoCommand { get; }
-    public Command OnVolverCommand { get; }
-
-    public ProductoListaViewModel()
+    public partial class ProductoListaViewModel : BaseViewModel
     {
-        Task.Run(async () => { await GetProductos(); }).Wait();
-    }
+        [ObservableProperty]
+        private ObservableCollection<Producto> _productos;
 
-    partial void OnProductoSeleccionadoChanged(Producto value)
-    {
-        if (value != null)
+        [ObservableProperty]
+        private bool isRefreshing;
+
+        [ObservableProperty]
+        private Producto productoSeleccionado;
+
+        public Command CrearProductoCommand { get; }
+        public Command OnVolverCommand { get; }
+
+        public ProductoListaViewModel()
         {
-            GoToDetalleCommand.Execute(null);  // Llama al comando cuando un producto es seleccionado
-        }
-    }
-
-    [RelayCommand]
-    private async Task GetProductos()
-    {
-        IsBusy = IsRefreshing = true;
-
-        var productos = await ApiService.GetProductosAsync();
-
-        if (productos != null)
-        {
-            Productos = new ObservableCollection<Producto>(productos);
+            // Llama directamente a GetProductos en el constructor
+            Task.Run(async () => { await GetProductos(); }).Wait();
         }
 
-        IsBusy = IsRefreshing = false;
-    }
-
-    [RelayCommand]
-    private async Task GoToDetalle()
-    {
-        if (productoSeleccionado == null)
+        // Este método actualizará los productos cuando la selección cambie
+        partial void OnProductoSeleccionadoChanged(Producto value)
         {
-            return;
+            if (value != null)
+            {
+                GoToDetalleCommand.Execute(null);  // Llama al comando cuando un producto es seleccionado
+            }
         }
 
-        // Navega a la página de detalles del producto seleccionado
-        await Application.Current.MainPage.Navigation.PushAsync(new ProductoDetallePage(productoSeleccionado), true);
-    }
+        // Método que obtiene la lista de productos de la API
+        [RelayCommand]
+        private async Task GetProductos()
+        {
+            IsBusy = IsRefreshing = true;
 
-    [RelayCommand]
-    private async Task CreateProducto()
-    {
-        await Application.Current.MainPage.Navigation.PushAsync(new AgregarProductoPage());
-    }
+            var productos = await ApiService.GetProductosAsync();
 
-    [RelayCommand]
-    private async Task OnVolver()
-    {
-        await Application.Current.MainPage.Navigation.PopAsync();
+            if (productos != null)
+            {
+                Productos = new ObservableCollection<Producto>(productos); // Actualiza la lista
+            }
+
+            IsBusy = IsRefreshing = false;
+        }
+
+        // Navega a la página de detalles de un producto
+        [RelayCommand]
+        private async Task GoToDetalle()
+        {
+            if (productoSeleccionado == null)
+            {
+                return;
+            }
+
+            // Navega a la página de detalles del producto seleccionado
+            await Application.Current.MainPage.Navigation.PushAsync(new ProductoDetallePage(productoSeleccionado), true);
+        }
+
+        public async Task ActualizarListaProductos()
+        {
+            var productosActualizados = await ApiService.GetProductosAsync();
+            if (productosActualizados != null)
+            {
+                Productos = new ObservableCollection<Producto>(productosActualizados);
+            }
+        }
+
+        // Método para crear un nuevo producto
+        [RelayCommand]
+        private async Task CreateProducto()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new AgregarProductoPage());
+        }
+
+        // Vuelve a la página anterior
+        [RelayCommand]
+        private async Task OnVolver()
+        {
+            await Application.Current.MainPage.Navigation.PopAsync();
+        }
     }
 }

@@ -1,17 +1,20 @@
-﻿using AppHomeStore.Models;
-using System.Net.Http;
-using System;
+﻿using System;
+using System.Net.Http.Headers;
 using System.Text.Json;
+using System.Threading.Tasks;
+using AppHomeStore.Models;
+using System.Net.Http;
 using System.Text.Json.Serialization;
 using System.Net.Http.Json;
 using System.Text;
+using System.Diagnostics;
 
-namespace AppHomeStore;
-
-public class ApiService
+namespace AppHomeStore
 {
+  public class ApiService
+  {
     private static readonly string BASE_URL = "https://localhost:7269/api/";
-    static HttpClient httpClient = new HttpClient() { Timeout = TimeSpan.FromSeconds(60) };
+    static HttpClient httpClient = new HttpClient() { Timeout = TimeSpan.FromMinutes(2) };
 
     public static async Task<List<Producto>> GetProductosAsync()
     {
@@ -129,15 +132,19 @@ public class ApiService
         }
     }
 
-    public async Task<bool> ModificarProductoAsync(Producto producto)
+    public async Task<bool> ModificarProductoAsync(ModificarProductoDto productoDto)
     {
-        string FINAL_URL = BASE_URL + "Producto/" + producto.IdProducto;
+        string FINAL_URL = BASE_URL + "Producto/" + productoDto.IdProducto;
+
         try
         {
             var content = new StringContent(
-                    JsonSerializer.Serialize(producto),
-                    Encoding.UTF8, "application/json"
-                );
+                JsonSerializer.Serialize(productoDto),
+                Encoding.UTF8, "application/json"
+            );
+
+            // Registra la solicitud para depuración
+            Debug.WriteLine($"Enviando PUT a {FINAL_URL} con contenido: {content}");
 
             var result = await httpClient.PutAsync(FINAL_URL, content).ConfigureAwait(false);
 
@@ -147,17 +154,18 @@ public class ApiService
             }
             else
             {
+                // Registra el código de estado para depuración
+                Debug.WriteLine($"Error al modificar producto: {result.StatusCode}");
                 return false;
             }
-
         }
         catch (Exception ex)
         {
             throw new Exception(ex.Message);
         }
     }
-
-    public static async Task<bool> EliminarProducto(int IdProducto)
+  
+    public static async Task<bool> EliminarProductoAsync(int IdProducto)
     {
         string FINAL_URL = BASE_URL + "Producto/" + IdProducto;
         try
@@ -511,4 +519,5 @@ public class ApiService
         }
         return null; // O maneja el error de manera apropiada
     }
+  }
 }

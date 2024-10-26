@@ -18,7 +18,7 @@ public partial class AgregarProductoViewModel : BaseViewModel
 
     public AgregarProductoViewModel()
     {
-        Title = Constants.AppName;
+       // Title = Constants.AppName;
         listaCategorias = GetCategoriasValues();
     }
 
@@ -32,6 +32,18 @@ public partial class AgregarProductoViewModel : BaseViewModel
     [RelayCommand]
     private async Task GrabarProducto()
     {
+        // Validar que todos los campos estén completos
+        if (string.IsNullOrWhiteSpace(Nombre) ||
+            string.IsNullOrWhiteSpace(Descripcion) ||
+            Precio <= 0 ||
+            Stock < 0 ||
+            CategoriaSeleccionada == null ||
+            string.IsNullOrWhiteSpace(Imagen))
+        {
+            await Application.Current.MainPage.DisplayAlert("Advertencia", "Por favor, complete todos los campos.", "Aceptar");
+            return; // Salir del método si hay campos vacíos
+        }
+
         var registro = new CrearProductoDto
         {
             NombreProducto = this.Nombre,
@@ -45,8 +57,7 @@ public partial class AgregarProductoViewModel : BaseViewModel
         try
         {
             await ApiService.CrearProductoAsync(registro);
-
-            await Application.Current.MainPage.DisplayAlert("Exito", "Se guardó nuevo Producto.", "Aceptar");
+            await Application.Current.MainPage.DisplayAlert("Éxito", "Se guardó el nuevo producto.", "Aceptar");
         }
         catch (Exception ex)
         {
@@ -54,8 +65,6 @@ public partial class AgregarProductoViewModel : BaseViewModel
         }
 
         await Application.Current.MainPage.Navigation.PopAsync();
-
-
     }
 
     private List<Valor> GetCategoriasValues()
@@ -68,9 +77,9 @@ public partial class AgregarProductoViewModel : BaseViewModel
             new Valor { Key = 3, Value = "ARTICULOS DE BLANQUERIA" },
             new Valor { Key = 4, Value = "PRENDAS" },
             new Valor { Key = 5, Value = "ACCESORIOS" },
-            new Valor { Key = 5, Value = "COSMÉTICOS" },
-            new Valor { Key = 5, Value = "INFANTIL" },
-            new Valor { Key = 5, Value = "DECORACIÓN" }
+            new Valor { Key = 6, Value = "COSMÉTICOS" },
+            new Valor { Key = 7, Value = "INFANTIL" },
+            new Valor { Key = 8, Value = "DECORACIÓN" }
         };
 
         return categoriasValues;

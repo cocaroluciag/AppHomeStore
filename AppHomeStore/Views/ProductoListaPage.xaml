@@ -28,7 +28,6 @@
                        HorizontalOptions="CenterAndExpand"
                        TextColor="White"/>
             </Frame>
-
             <!-- Título PRODUCTOS más cerca de MENÚ -->
             <Label Text="HOME"
                    FontSize="60"
@@ -65,7 +64,7 @@
             </RefreshView>
 
             <!-- Botón Volver -->
-            <Button Text="Volver" Command="{Binding OnVolverCommand}" FontAttributes="Bold" WidthRequest="500" HeightRequest="10" HorizontalOptions="Center"  Margin="0,40,0,0" VerticalOptions="End" BackgroundColor="#FFC9AC" />
+            <Button Text="Volver" Command="{Binding OnVolverCommand}" FontAttributes="Bold" WidthRequest="500" HeightRequest="10" HorizontalOptions="Center"  Margin="0,100,0,0" VerticalOptions="End" BackgroundColor="#FFC9AC" />
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

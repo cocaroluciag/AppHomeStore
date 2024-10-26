@@ -1,13 +1,18 @@
+using AppHomeStore.Models;
 using AppHomeStore.ViewModels;
 
-namespace AppHomeStore.Views;
-
-public partial class ModificarProductoPage : ContentPage
+namespace AppHomeStore.Views
 {
-    ModificarProductoViewModel viewModel;
-    public ModificarProductoPage()
+    public partial class ModificarProductoPage : ContentPage
     {
-        InitializeComponent();
-        BindingContext = viewModel = new ModificarProductoViewModel();
+        public ModificarProductoPage(Producto productoSeleccionado, ApiService apiService) // Recibe un Producto
+        {
+            InitializeComponent();
+            // Crear una instancia de ModificarProductoViewModel con los parámetros requeridos
+            ModificarProductoViewModel viewModel = new ModificarProductoViewModel(productoSeleccionado, apiService);
+
+            // Establecer el contexto de datos de la página en el ViewModel
+            BindingContext = viewModel;
+        }
     }
 }

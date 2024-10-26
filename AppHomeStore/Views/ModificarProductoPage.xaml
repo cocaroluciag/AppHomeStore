@@ -2,19 +2,36 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppHomeStore.Views.ModificarProductoPage"
-             Title="{Binding Title}">
-
+             NavigationPage.HasNavigationBar="False"
+             Background="#623500">
+             
     <ScrollView>
-        <VerticalStackLayout Margin="10" BackgroundColor="#4C2F1D">
-            <Grid ColumnDefinitions=".3*,.7*" RowDefinitions="*,*,*,*,*,*,*,*,*" RowSpacing="5">
+        <VerticalStackLayout Margin="10">
 
-                <Label 
-            Margin="0,5,0,10"
-            Text="Modificar Producto" 
-            FontSize="Large" 
-            HorizontalOptions="Center" 
-            Grid.ColumnSpan="2" 
-            TextColor="Orange" />
+            <!-- Título MENÚ con bordes rectos -->
+            <Frame BackgroundColor="#C16300"
+          BorderColor="#000000"
+          CornerRadius="0"
+          Padding="10"
+          HorizontalOptions="FillAndExpand"
+          VerticalOptions="Start"
+          HeightRequest="49"
+          WidthRequest="450">
+            <Label Text="MODIFICAR PRODUCTO" 
+              FontSize="30"
+              Margin="0,0,0,0"
+              HeightRequest="50"
+              HorizontalOptions="CenterAndExpand"
+              TextColor="White"/>
+            </Frame>
+            <!--  -->
+            <Label Text="HOME"
+             FontSize="60"
+             FontAttributes="Bold"
+             HorizontalOptions="CenterAndExpand"
+             TextColor="White"
+              Margin="0,0,0,0"/>
+            <Grid ColumnDefinitions=".3*,.7*"  Margin="0,90,0,0" RowDefinitions="*,*,*,*,*,*,*,*,*" RowSpacing="5">
 
                 <Label Text="Nombre" Grid.Column="0" Grid.Row="1" VerticalOptions="End" />
                 <Entry Grid.Column="1" Grid.Row="1" VerticalOptions="End" Text="{Binding Nombre}"/>
@@ -32,7 +49,7 @@
                 <Picker
                     Grid.Column="1" Grid.Row="5" VerticalOptions="End"
                     FontSize="Small"
-                    TextColor="Black"                   
+                    TextColor="#FFC9AC"                   
                     x:Name="CategoriaPicker"
                     ItemDisplayBinding="{Binding Value}"
                     SelectedItem="{Binding CategoriaSeleccionada}"
@@ -42,17 +59,23 @@
                 <Entry Grid.Column="1" Grid.Row="6" VerticalOptions="End" Text="{Binding Imagen}"/>
 
                 <Button 
-            Command="{Binding GrabarCommand}"
-            Text="Grabar" 
-            Grid.Row="7" 
-            Grid.ColumnSpan="2" />
+                  Command="{Binding ModificarProductoCommand}"
+                  Text="Guardar Cambios" 
+                  Grid.Row="7" 
+                  Grid.ColumnSpan="2" 
+                  VerticalOptions="End"
+                  Margin="0,100,0,0"
+                  FontAttributes="Bold"
+                  BackgroundColor="#FFC9AC"/>
                 <Button 
-            Command="{Binding CancelarCommand}"
-            Text="Cancelar" 
-            Grid.Row="8" 
-            Grid.ColumnSpan="2" 
-            BackgroundColor="SaddleBrown" 
-            TextColor="White"/>
+                  Command="{Binding CancelarCommand}"
+                  Text="Cancelar" 
+                  Grid.Row="8" 
+                  FontAttributes="Bold"
+                  Margin="0,0,0,0"
+                  Grid.ColumnSpan="2" 
+                  VerticalOptions="End"
+                  BackgroundColor="#C16300"/>
             </Grid>
         </VerticalStackLayout>
     </ScrollView>
