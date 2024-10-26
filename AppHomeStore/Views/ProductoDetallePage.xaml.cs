@@ -9,8 +9,8 @@ public partial class ProductoDetallePage : ContentPage
     {
         InitializeComponent();
 
-        ProductoDetalleViewModel vm = new ProductoDetalleViewModel();
-        this.BindingContext = vm;
-        vm.Producto = param;  // Asignas el producto pasado como parámetro
+        // Crear la instancia del ViewModel pasando el producto como parámetro
+        ProductoDetalleViewModel vm = new ProductoDetalleViewModel(param);
+        this.BindingContext = vm; // Asigna el ViewModel como contexto de enlace
     }
 }

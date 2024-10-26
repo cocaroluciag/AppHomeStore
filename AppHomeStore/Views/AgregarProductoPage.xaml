@@ -5,7 +5,7 @@
              xmlns:viewModels="clr-namespace:AppHomeStore.ViewModels"
              x:DataType="viewModels:AgregarProductoViewModel"
              xmlns:models="clr-namespace:AppHomeStore.Models"
-              NavigationPage.HasNavigationBar="False"
+             NavigationPage.HasNavigationBar="False"
              Background="#623500">
     <ScrollView>
         <VerticalStackLayout Margin="10">
@@ -41,23 +41,23 @@
                     HorizontalOptions="Center" 
                     Grid.ColumnSpan="2" />
 
-                <Label Text="Nombre" Grid.Column="0" Grid.Row="1" FontSize="18" VerticalOptions="End" />
+                <Label Text="Nombre:" Grid.Column="0" Grid.Row="1" FontSize="18" VerticalOptions="End" />
                 <Entry Grid.Column="1" Grid.Row="1" VerticalOptions="End" Text="{Binding Nombre}"/>
 
-                <Label Text="Descripcion" Grid.Column="0" Grid.Row="2" FontSize="18" VerticalOptions="End"/>
+                <Label Text="Descripción:" Grid.Column="0" Grid.Row="2" FontSize="18" VerticalOptions="End"/>
                 <Entry Grid.Column="1" Grid.Row="2" VerticalOptions="End" Text="{Binding Descripcion}"/>
 
-                <Label Text="Precio" Grid.Column="0" Grid.Row="3" FontSize="18" VerticalOptions="End"/>
+                <Label Text="Precio:" Grid.Column="0" Grid.Row="3" FontSize="18" VerticalOptions="End"/>
                 <Entry Grid.Column="1" Grid.Row="3" VerticalOptions="End" Text="{Binding Precio}"/>
 
-                <Label Text="Stock" Grid.Column="0" Grid.Row="4" FontSize="18" VerticalOptions="End"/>
+                <Label Text="Stock:" Grid.Column="0" Grid.Row="4" FontSize="18" VerticalOptions="End"/>
                 <Entry Grid.Column="1" Grid.Row="4" VerticalOptions="End" Text="{Binding Stock}"/>
 
-                <Label Text="Categoria" Grid.Column="0" Grid.Row="5" FontSize="18" VerticalOptions="End" />
+                <Label Text="Categoria:" Grid.Column="0" Grid.Row="5" FontSize="18" VerticalOptions="End" />
                 <Picker
                     Grid.Column="1" Grid.Row="5" VerticalOptions="End"
                     FontSize="Small"
-                    TextColor="Black"                   
+                    TextColor="#FFC9AC"                   
                     x:Name="CategoriaPicker"
                     ItemDisplayBinding="{Binding Value}"
                     SelectedItem="{Binding CategoriaSeleccionada}"

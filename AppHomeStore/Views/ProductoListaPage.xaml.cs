@@ -1,24 +1,25 @@
 using AppHomeStore.ViewModels;
 
-namespace AppHomeStore.Views;
-
-public partial class ProductoListaPage : ContentPage
+namespace AppHomeStore.Views
 {
-    public ProductoListaPage(ProductoListaViewModel _viewModel)
+    public partial class ProductoListaPage : ContentPage
     {
-        BindingContext = _viewModel;
-        InitializeComponent();
-    }
-
-    protected async override void OnAppearing()
-    {
-        base.OnAppearing();
-
-        var vm = BindingContext as ProductoListaViewModel;
-
-        if (vm != null)
+        public ProductoListaPage(ProductoListaViewModel viewModel)
         {
-            await vm.GetProductosCommand.ExecuteAsync(null);
+            InitializeComponent();
+            BindingContext = viewModel;
+        }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+
+            var vm = BindingContext as ProductoListaViewModel;
+
+            if (vm != null)
+            {
+                await vm.GetProductosCommand.ExecuteAsync(null);
+            }
         }
     }
 }

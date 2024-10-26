@@ -30,7 +30,7 @@
     <AppXManifest Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-10-23T05:28:02.396</Modified>
+      <Modified>2024-10-25T20:39:09.754</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppHomeStore.dll">
       <PackagePath>AppHomeStore.dll</PackagePath>
-      <Modified>2024-10-23T05:27:56.880</Modified>
+      <Modified>2024-10-25T20:39:01.706</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>AppHomeStore.exe</PackagePath>
-      <Modified>2024-10-23T05:27:57.177</Modified>
+      <Modified>2024-10-25T20:39:02.081</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cocar\source\repos\AppHomeStore\AppHomeStore\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
