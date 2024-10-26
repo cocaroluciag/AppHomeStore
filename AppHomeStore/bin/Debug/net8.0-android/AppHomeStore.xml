@@ -1,0 +1,380 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AppHomeStore</name>
+    </assembly>
+    <members>
+        <member name="T:AppHomeStore.ViewModels.AgregarCarritoViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.AgregarCarritoViewModel.IdCarrito">
+            <inheritdoc cref="F:AppHomeStore.ViewModels.AgregarCarritoViewModel._idCarrito"/>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.AgregarCarritoViewModel.IdProducto">
+            <inheritdoc cref="F:AppHomeStore.ViewModels.AgregarCarritoViewModel._idProducto"/>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.AgregarCarritoViewModel.Cantidad">
+            <inheritdoc cref="F:AppHomeStore.ViewModels.AgregarCarritoViewModel._cantidad"/>
+        </member>
+        <member name="F:AppHomeStore.ViewModels.AgregarCarritoViewModel.agregarProductoAlCarritoCommand">
+            <summary>The backing field for <see cref="P:AppHomeStore.ViewModels.AgregarCarritoViewModel.AgregarProductoAlCarritoCommand"/>.</summary>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.AgregarCarritoViewModel.AgregarProductoAlCarritoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppHomeStore.ViewModels.AgregarCarritoViewModel.AgregarProductoAlCarrito"/>.</summary>
+        </member>
+        <member name="F:AppHomeStore.ViewModels.AgregarCarritoViewModel.cancelarCommand">
+            <summary>The backing field for <see cref="P:AppHomeStore.ViewModels.AgregarCarritoViewModel.CancelarCommand"/>.</summary>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.AgregarCarritoViewModel.CancelarCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppHomeStore.ViewModels.AgregarCarritoViewModel.Cancelar"/>.</summary>
+        </member>
+        <member name="T:AppHomeStore.ViewModels.AgregarProductoViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.AgregarProductoViewModel.Nombre">
+            <inheritdoc cref="F:AppHomeStore.ViewModels.AgregarProductoViewModel.nombre"/>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.AgregarProductoViewModel.Descripcion">
+            <inheritdoc cref="F:AppHomeStore.ViewModels.AgregarProductoViewModel.descripcion"/>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.AgregarProductoViewModel.Precio">
+            <inheritdoc cref="F:AppHomeStore.ViewModels.AgregarProductoViewModel.precio"/>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.AgregarProductoViewModel.Stock">
+            <inheritdoc cref="F:AppHomeStore.ViewModels.AgregarProductoViewModel.stock"/>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.AgregarProductoViewModel.ListaCategorias">
+            <inheritdoc cref="F:AppHomeStore.ViewModels.AgregarProductoViewModel.listaCategorias"/>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.AgregarProductoViewModel.CategoriaSeleccionada">
+            <inheritdoc cref="F:AppHomeStore.ViewModels.AgregarProductoViewModel.categoriaSeleccionada"/>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.AgregarProductoViewModel.Imagen">
+            <inheritdoc cref="F:AppHomeStore.ViewModels.AgregarProductoViewModel.imagen"/>
+        </member>
+        <member name="F:AppHomeStore.ViewModels.AgregarProductoViewModel.cancelarCommand">
+            <summary>The backing field for <see cref="P:AppHomeStore.ViewModels.AgregarProductoViewModel.CancelarCommand"/>.</summary>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.AgregarProductoViewModel.CancelarCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppHomeStore.ViewModels.AgregarProductoViewModel.Cancelar"/>.</summary>
+        </member>
+        <member name="F:AppHomeStore.ViewModels.AgregarProductoViewModel.grabarProductoCommand">
+            <summary>The backing field for <see cref="P:AppHomeStore.ViewModels.AgregarProductoViewModel.GrabarProductoCommand"/>.</summary>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.AgregarProductoViewModel.GrabarProductoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppHomeStore.ViewModels.AgregarProductoViewModel.GrabarProducto"/>.</summary>
+        </member>
+        <member name="T:AppHomeStore.ViewModels.BaseViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.BaseViewModel.IsBusy">
+            <inheritdoc cref="F:AppHomeStore.ViewModels.BaseViewModel.isBusy"/>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.BaseViewModel.Title">
+            <inheritdoc cref="F:AppHomeStore.ViewModels.BaseViewModel.title"/>
+        </member>
+        <member name="T:AppHomeStore.ViewModels.CarritoListaViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.CarritoListaViewModel.Carritos">
+            <inheritdoc cref="F:AppHomeStore.ViewModels.CarritoListaViewModel._carritos"/>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.CarritoListaViewModel.CarritoSeleccionado">
+            <inheritdoc cref="F:AppHomeStore.ViewModels.CarritoListaViewModel._carritoSeleccionado"/>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.CarritoListaViewModel.IsRefreshing">
+            <inheritdoc cref="F:AppHomeStore.ViewModels.CarritoListaViewModel.isRefreshing"/>
+        </member>
+        <member name="F:AppHomeStore.ViewModels.CarritoListaViewModel.getCarritosCommand">
+            <summary>The backing field for <see cref="P:AppHomeStore.ViewModels.CarritoListaViewModel.GetCarritosCommand"/>.</summary>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.CarritoListaViewModel.GetCarritosCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppHomeStore.ViewModels.CarritoListaViewModel.GetCarritos"/>.</summary>
+        </member>
+        <member name="F:AppHomeStore.ViewModels.CarritoListaViewModel.goToDetalleCommand">
+            <summary>The backing field for <see cref="P:AppHomeStore.ViewModels.CarritoListaViewModel.GoToDetalleCommand"/>.</summary>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.CarritoListaViewModel.GoToDetalleCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppHomeStore.ViewModels.CarritoListaViewModel.GoToDetalle"/>.</summary>
+        </member>
+        <member name="T:AppHomeStore.ViewModels.CarritoProductoViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.CarritoProductoViewModel.ProductosEnCarrito">
+            <inheritdoc cref="F:AppHomeStore.ViewModels.CarritoProductoViewModel._productosEnCarrito"/>
+        </member>
+        <member name="F:AppHomeStore.ViewModels.CarritoProductoViewModel.editarCarritoCommand">
+            <summary>The backing field for <see cref="P:AppHomeStore.ViewModels.CarritoProductoViewModel.EditarCarritoCommand"/>.</summary>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.CarritoProductoViewModel.EditarCarritoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppHomeStore.ViewModels.CarritoProductoViewModel.EditarCarrito"/>.</summary>
+        </member>
+        <member name="F:AppHomeStore.ViewModels.CarritoProductoViewModel.eliminarCarritoCommand">
+            <summary>The backing field for <see cref="P:AppHomeStore.ViewModels.CarritoProductoViewModel.EliminarCarritoCommand"/>.</summary>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.CarritoProductoViewModel.EliminarCarritoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppHomeStore.ViewModels.CarritoProductoViewModel.EliminarCarrito"/>.</summary>
+        </member>
+        <member name="F:AppHomeStore.ViewModels.CarritoProductoViewModel.volverCommand">
+            <summary>The backing field for <see cref="P:AppHomeStore.ViewModels.CarritoProductoViewModel.VolverCommand"/>.</summary>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.CarritoProductoViewModel.VolverCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppHomeStore.ViewModels.CarritoProductoViewModel.OnVolver"/>.</summary>
+        </member>
+        <member name="T:AppHomeStore.ViewModels.MainViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="F:AppHomeStore.ViewModels.MainViewModel.goToProductoListaCommand">
+            <summary>The backing field for <see cref="P:AppHomeStore.ViewModels.MainViewModel.GoToProductoListaCommand"/>.</summary>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.MainViewModel.GoToProductoListaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppHomeStore.ViewModels.MainViewModel.GoToProductoLista"/>.</summary>
+        </member>
+        <member name="F:AppHomeStore.ViewModels.MainViewModel.goToUsuarioListaCommand">
+            <summary>The backing field for <see cref="P:AppHomeStore.ViewModels.MainViewModel.GoToUsuarioListaCommand"/>.</summary>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.MainViewModel.GoToUsuarioListaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppHomeStore.ViewModels.MainViewModel.GoToUsuarioLista"/>.</summary>
+        </member>
+        <member name="F:AppHomeStore.ViewModels.MainViewModel.goToCarritoCommand">
+            <summary>The backing field for <see cref="P:AppHomeStore.ViewModels.MainViewModel.GoToCarritoCommand"/>.</summary>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.MainViewModel.GoToCarritoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppHomeStore.ViewModels.MainViewModel.GoToCarrito"/>.</summary>
+        </member>
+        <member name="F:AppHomeStore.ViewModels.MainViewModel.goToAcercaCommand">
+            <summary>The backing field for <see cref="P:AppHomeStore.ViewModels.MainViewModel.GoToAcercaCommand"/>.</summary>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.MainViewModel.GoToAcercaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppHomeStore.ViewModels.MainViewModel.GoToAcerca"/>.</summary>
+        </member>
+        <member name="T:AppHomeStore.ViewModels.ModificarCarritoViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="F:AppHomeStore.ViewModels.ModificarCarritoViewModel.cancelarCommand">
+            <summary>The backing field for <see cref="P:AppHomeStore.ViewModels.ModificarCarritoViewModel.CancelarCommand"/>.</summary>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.ModificarCarritoViewModel.CancelarCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppHomeStore.ViewModels.ModificarCarritoViewModel.Cancelar"/>.</summary>
+        </member>
+        <member name="F:AppHomeStore.ViewModels.ModificarCarritoViewModel.grabarCommand">
+            <summary>The backing field for <see cref="P:AppHomeStore.ViewModels.ModificarCarritoViewModel.GrabarCommand"/>.</summary>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.ModificarCarritoViewModel.GrabarCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppHomeStore.ViewModels.ModificarCarritoViewModel.Grabar"/>.</summary>
+        </member>
+        <member name="T:AppHomeStore.ViewModels.ModificarProductoViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="F:AppHomeStore.ViewModels.ModificarProductoViewModel.cancelarCommand">
+            <summary>The backing field for <see cref="P:AppHomeStore.ViewModels.ModificarProductoViewModel.CancelarCommand"/>.</summary>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.ModificarProductoViewModel.CancelarCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppHomeStore.ViewModels.ModificarProductoViewModel.Cancelar"/>.</summary>
+        </member>
+        <member name="F:AppHomeStore.ViewModels.ModificarProductoViewModel.grabarCommand">
+            <summary>The backing field for <see cref="P:AppHomeStore.ViewModels.ModificarProductoViewModel.GrabarCommand"/>.</summary>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.ModificarProductoViewModel.GrabarCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppHomeStore.ViewModels.ModificarProductoViewModel.Grabar"/>.</summary>
+        </member>
+        <member name="T:AppHomeStore.ViewModels.ProductoDetalleViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.ProductoDetalleViewModel.Producto">
+            <inheritdoc cref="F:AppHomeStore.ViewModels.ProductoDetalleViewModel.producto"/>
+        </member>
+        <member name="F:AppHomeStore.ViewModels.ProductoDetalleViewModel.goBackCommand">
+            <summary>The backing field for <see cref="P:AppHomeStore.ViewModels.ProductoDetalleViewModel.GoBackCommand"/>.</summary>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.ProductoDetalleViewModel.GoBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppHomeStore.ViewModels.ProductoDetalleViewModel.GoBack"/>.</summary>
+        </member>
+        <member name="F:AppHomeStore.ViewModels.ProductoDetalleViewModel.editarProductoCommand">
+            <summary>The backing field for <see cref="P:AppHomeStore.ViewModels.ProductoDetalleViewModel.EditarProductoCommand"/>.</summary>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.ProductoDetalleViewModel.EditarProductoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppHomeStore.ViewModels.ProductoDetalleViewModel.EditarProducto"/>.</summary>
+        </member>
+        <member name="F:AppHomeStore.ViewModels.ProductoDetalleViewModel.eliminarProductoCommand">
+            <summary>The backing field for <see cref="P:AppHomeStore.ViewModels.ProductoDetalleViewModel.EliminarProductoCommand"/>.</summary>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.ProductoDetalleViewModel.EliminarProductoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppHomeStore.ViewModels.ProductoDetalleViewModel.EliminarProducto"/>.</summary>
+        </member>
+        <member name="T:AppHomeStore.ViewModels.ProductoListaViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.ProductoListaViewModel.Productos">
+            <inheritdoc cref="F:AppHomeStore.ViewModels.ProductoListaViewModel._productos"/>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.ProductoListaViewModel.IsRefreshing">
+            <inheritdoc cref="F:AppHomeStore.ViewModels.ProductoListaViewModel.isRefreshing"/>
+        </member>
+        <member name="F:AppHomeStore.ViewModels.ProductoListaViewModel.getProductosCommand">
+            <summary>The backing field for <see cref="P:AppHomeStore.ViewModels.ProductoListaViewModel.GetProductosCommand"/>.</summary>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.ProductoListaViewModel.GetProductosCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppHomeStore.ViewModels.ProductoListaViewModel.GetProductos"/>.</summary>
+        </member>
+        <member name="F:AppHomeStore.ViewModels.ProductoListaViewModel.goToDetalleCommand">
+            <summary>The backing field for <see cref="P:AppHomeStore.ViewModels.ProductoListaViewModel.GoToDetalleCommand"/>.</summary>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.ProductoListaViewModel.GoToDetalleCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:AppHomeStore.ViewModels.ProductoListaViewModel.GoToDetalle(AppHomeStore.Models.Producto)"/>.</summary>
+        </member>
+        <member name="F:AppHomeStore.ViewModels.ProductoListaViewModel.createProductoCommand">
+            <summary>The backing field for <see cref="P:AppHomeStore.ViewModels.ProductoListaViewModel.CreateProductoCommand"/>.</summary>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.ProductoListaViewModel.CreateProductoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppHomeStore.ViewModels.ProductoListaViewModel.CreateProducto"/>.</summary>
+        </member>
+        <member name="F:AppHomeStore.ViewModels.ProductoListaViewModel.volverCommand">
+            <summary>The backing field for <see cref="P:AppHomeStore.ViewModels.ProductoListaViewModel.VolverCommand"/>.</summary>
+        </member>
+        <member name="P:AppHomeStore.ViewModels.ProductoListaViewModel.VolverCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppHomeStore.ViewModels.ProductoListaViewModel.OnVolver"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IdCarrito">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IdCarrito" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IdProducto">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IdProducto" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Cantidad">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Cantidad" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Nombre">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Nombre" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Descripcion">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Descripcion" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Precio">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Precio" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Stock">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Stock" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ListaCategorias">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ListaCategorias" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CategoriaSeleccionada">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CategoriaSeleccionada" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Imagen">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Imagen" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Carritos">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Carritos" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CarritoSeleccionado">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CarritoSeleccionado" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsRefreshing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsRefreshing" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ProductosEnCarrito">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ProductosEnCarrito" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Producto">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Producto" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Productos">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Productos" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IdCarrito">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IdCarrito" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IdProducto">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IdProducto" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Cantidad">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Cantidad" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Nombre">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Nombre" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Descripcion">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Descripcion" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Precio">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Precio" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Stock">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Stock" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ListaCategorias">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ListaCategorias" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CategoriaSeleccionada">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CategoriaSeleccionada" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Imagen">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Imagen" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Carritos">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Carritos" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CarritoSeleccionado">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CarritoSeleccionado" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsRefreshing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsRefreshing" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ProductosEnCarrito">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ProductosEnCarrito" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Producto">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Producto" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Productos">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Productos" generated properties.</summary>
+        </member>
+    </members>
+</doc>
