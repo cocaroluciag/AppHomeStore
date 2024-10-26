@@ -1,1 +1,0 @@
-C:\Users\valen\source\repos\AppHomeStore\AppHomeStore.csproj;x64
