@@ -1,12 +1,70 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppHomeStore.Views.ProductoListaPage"
-             Title="ProductoListaPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             BackgroundColor="#623500"
+             NavigationPage.HasNavigationBar="False">
+
+    <ScrollView Margin="10">
+        <VerticalStackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Spacing="20">
+
+            <!-- Botón para crear nuevo producto -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                <ImageButton Source="crear.png" HeightRequest="30" Command="{Binding CreateProductoCommand}"/>
+            </StackLayout>
+
+            <!-- Título MENÚ con bordes rectos -->
+            <Frame BackgroundColor="#C16300"
+                   BorderColor="#000000"
+                   CornerRadius="0"
+                   Padding="10"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="Start"
+                   HeightRequest="49"
+                   WidthRequest="450">
+                <Label Text="LISTA PRODUCTOS" 
+                       FontSize="30"
+                       Margin="0,0,0,0"
+                       HeightRequest="50"
+                       HorizontalOptions="CenterAndExpand"
+                       TextColor="White"/>
+            </Frame>
+            <!-- Título PRODUCTOS más cerca de MENÚ -->
+            <Label Text="HOME"
+                   FontSize="60"
+                   FontAttributes="Bold"
+                   HorizontalOptions="CenterAndExpand"
+                   TextColor="White"
+                   Margin="0,0,0,0"/>
+
+            <!-- Vista de refresco y colección de productos -->
+            <RefreshView Command="{Binding GetProductosCommand}" IsRefreshing="{Binding IsRefreshing}">
+                <CollectionView 
+                    ItemsSource="{Binding Productos}"  
+                    SelectionMode="Single" 
+                    SelectedItem="{Binding ProductoSeleccionado, Mode=TwoWay}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame BackgroundColor="White" Padding="5">
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="{Binding Imagen}" HeightRequest="50"/>
+                                    <StackLayout>
+                                        <Label Text="{Binding NombreProducto}" FontSize="16" TextColor="Black"/>
+                                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                                            <Label Text="$ " FontSize="15" TextColor="#C16300"/>
+                                            <!-- Símbolo de dólar -->
+                                            <Label Text="{Binding Precio}" FontSize="15" FontAttributes="Bold" TextColor="#C16300"/>
+                                            <!-- Precio -->
+                                        </StackLayout>
+                                    </StackLayout>
+                                </StackLayout>
+                           </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </RefreshView>
+
+            <!-- Botón Volver -->
+            <Button Text="Volver" Command="{Binding OnVolverCommand}" FontAttributes="Bold" WidthRequest="500" HeightRequest="10" HorizontalOptions="Center"  Margin="0,100,0,0" VerticalOptions="End" BackgroundColor="#FFC9AC" />
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

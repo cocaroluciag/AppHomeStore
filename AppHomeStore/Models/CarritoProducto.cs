@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace AppHomeStore.Models
 {
-    internal class CarritoProducto
+    public class CarritoProducto
     {
+        public int IdCarritoProducto { get; set; }
+        public int IdCarrito { get; set; }
+        public int IdProducto { get; set; }
+        public int Cantidad { get; set; }
     }
 }

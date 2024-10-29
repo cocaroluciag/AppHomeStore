@@ -2,11 +2,138 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppHomeStore.Views.MainPage"
-             Title="MainPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             xmlns:vm="clr-namespace:AppHomeStore.ViewModels"
+             xmlns:model="clr-namespace:AppHomeStore.Models"
+             x:DataType="vm:MainViewModel"
+             NavigationPage.HasNavigationBar="False"
+             Background="#623500">
+
+    <!-- Contenedor principal -->
+    <ScrollView Margin="10">
+        <VerticalStackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Spacing="20">
+
+            <!-- Título MENÚ con bordes rectos -->
+            <Frame BackgroundColor="#C16300"
+                   BorderColor="#000000"
+                   CornerRadius="0"
+                   Padding="10"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="Start"
+                   HeightRequest="49"
+                   WidthRequest="450">
+                <Label Text="MENÚ" 
+                       FontSize="30"
+                       HeightRequest="50"
+                       HorizontalOptions="CenterAndExpand"
+                       TextColor="White"/>
+            </Frame>
+
+            <!-- Título HOME más cerca de MENÚ -->
+            <Label Text="HOME"
+                   FontSize="60"
+                   FontAttributes="Bold"
+                   HorizontalOptions="CenterAndExpand"
+                   TextColor="White"
+                   Margin="0,0,0,0"/>
+
+            <!-- Grid para los botones con iconos y texto -->
+            <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto" Margin="0,0,0,0" Padding="50" RowSpacing="10" ColumnSpacing="20">
+
+
+                <!-- Botón Productos -->
+                <Frame BackgroundColor="#623500"
+                  BorderColor="#FFC9AC"
+                  CornerRadius="5"
+                  Padding="10"
+                  Margin="10,0,0,0"
+                  HeightRequest="190"
+                  Grid.Row="0"
+                  Grid.Column="0"
+                  HorizontalOptions="FillAndExpand"
+                   VerticalOptions="Center">
+                    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                        <Image Source="{FontImageSource Glyph=&#xe2c4;, FontFamily=MaterialDesignIcons, Size=40}" />
+                        <Label Text="PRODUCTOS" FontSize="15" TextColor="White" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    </StackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GoToProductoListaCommand}" />
+                    </Frame.GestureRecognizers>
+                </Frame>
+
+                <!-- Botón Usuarios -->
+                <Frame BackgroundColor="#623500"
+                       BorderColor="#C16300"
+                       
+                       CornerRadius="5"
+                       Padding="10"
+                       Margin="10,0,0,0"
+                       HeightRequest="190"
+                       Grid.Row="0"
+                       Grid.Column="1"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Center">
+                    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                        <Image Source="{FontImageSource Glyph=&#xe7fd;, FontFamily=MaterialDesignIcons, Size=40}" />
+                        <Label Text="USUARIOS" FontSize="15" TextColor="White" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    </StackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GoToUsuarioListaCommand}" />
+                    </Frame.GestureRecognizers>
+                </Frame>
+
+                <!-- Botón Carrito -->
+                <Frame BackgroundColor="#623500"
+                       BorderColor="#FFC9AC"
+                       CornerRadius="5"
+                       Padding="10"
+                       Margin="10,0,0,0"
+                       HeightRequest="190"
+                       Grid.Row="1"
+                       Grid.Column="0"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Center">
+                    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                        <Image Source="{FontImageSource Glyph=&#xe8cc;, FontFamily=MaterialDesignIcons, Size=40}" />
+                        <Label Text="CARRITO" FontSize="15" TextColor="White" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    </StackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GoToCarritoCommand}" />
+                    </Frame.GestureRecognizers>
+                </Frame>
+
+                <!-- Botón Acerca De -->
+                <Frame BackgroundColor="#623500"
+                       BorderColor="#C16300"
+                       CornerRadius="5"
+                       Padding="10"
+                       Margin="10,0,0,0"
+                       HeightRequest="190"
+                       Grid.Row="1"
+                       Grid.Column="1"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Center">
+                    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                        <Image Source="{FontImageSource Glyph=&#xe88e;, FontFamily=MaterialDesignIcons, Size=40}" />
+                        <Label Text="ACERCA DE" FontSize="15" TextColor="White" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    </StackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GoToAcercaCommand}" />
+                    </Frame.GestureRecognizers>
+                </Frame>
+
+            </Grid>
+
+            <!-- Botón Volver -->
+            <Button Text="Volver"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    BackgroundColor="#FFC9AC"
+                    HeightRequest="10"
+                    WidthRequest="500"
+                    Command="{Binding GoBackCommand}"
+                    HorizontalOptions="Center"
+                    Margin="0,0,0,10"
+                    VerticalOptions="End"/>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

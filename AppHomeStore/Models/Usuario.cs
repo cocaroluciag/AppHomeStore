@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace AppHomeStore.Models
 {
-    internal class Usuario
+    public class Usuario
     {
+        public int idUsuario { get; set; }
+        public string NombreUsuario { get; set; }
+        public string Correo { get; set; }
+        public string NumeroTelefonico { get; set; }
+        public string NroDocumento { get; set; }
+        public string Clave { get; set; }
     }
 }

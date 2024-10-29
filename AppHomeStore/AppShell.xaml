@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Shell
-    x:Class="AppHomeStore.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:AppHomeStore"
-    Shell.FlyoutBehavior="Disabled"
-    Title="AppHomeStore">
+    xmlns:views="clr-namespace:AppHomeStore.Views"
+    x:Class="AppHomeStore.AppShell">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <FlyoutItem Title="Menu" Icon="icon.png">
+        <ShellContent ContentTemplate="{DataTemplate views:MainPage}" Route="MainPage" />
+    </FlyoutItem>
 
+    <FlyoutItem Title="Productos" Icon="products_icon.png">
+        <ShellContent Title="Productos" ContentTemplate="{DataTemplate views:ProductoListaPage}" Route="ListaProductos" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Carrito" Icon="cart_icon.png">
+        <ShellContent Title="Carrito" ContentTemplate="{DataTemplate views:CarritoListaPage}" Route="Carrito" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Usuarios" Icon="users_icon.png">
+        <ShellContent Title="Usuarios" ContentTemplate="{DataTemplate views:UsuarioListaPage}" Route="Usuarios" />
+    </FlyoutItem>
+
+    <!-- Ruta para la página de detalles del producto -->
+    <ShellContent Title="Detalle del Producto" 
+                  ContentTemplate="{DataTemplate views:ProductoDetallePage}" 
+                  Route="ProductoDetalle" />
 </Shell>

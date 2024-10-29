@@ -2,11 +2,89 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppHomeStore.Views.AgregarProductoPage"
-             Title="AgregarProductoPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             xmlns:viewModels="clr-namespace:AppHomeStore.ViewModels"
+             x:DataType="viewModels:AgregarProductoViewModel"
+             xmlns:models="clr-namespace:AppHomeStore.Models"
+             NavigationPage.HasNavigationBar="False"
+             Background="#623500">
+    <ScrollView>
+        <VerticalStackLayout Margin="10">
+
+            <!-- Título MENÚ con bordes rectos -->
+            <Frame BackgroundColor="#C16300"
+                   BorderColor="#000000"
+                   CornerRadius="0"
+                   Padding="10"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="Start"
+                   HeightRequest="49"
+                   WidthRequest="450">
+                <Label Text="CREAR PRODUCTO" 
+                 FontSize="30"
+                 Margin="0,0,0,0"
+                 HeightRequest="50"
+                 HorizontalOptions="CenterAndExpand"
+                 TextColor="White"/>
+            </Frame>
+            <!--  -->
+            <Label Text="HOME"
+             FontSize="60"
+             FontAttributes="Bold"
+             HorizontalOptions="CenterAndExpand"
+             TextColor="White"
+             Margin="0,0,0,0"/>
+            
+            <Grid ColumnDefinitions=".3*,.7*" RowDefinitions="*,*,*,*,*,*,*,*,*" RowSpacing="5">
+                <Label 
+                    Margin="0,5,0,10"
+                    FontSize="Large" 
+                    HorizontalOptions="Center" 
+                    Grid.ColumnSpan="2" />
+
+                <Label Text="Nombre:" Grid.Column="0" Grid.Row="1" FontSize="18" VerticalOptions="End" />
+                <Entry Grid.Column="1" Grid.Row="1" VerticalOptions="End" Text="{Binding Nombre}"/>
+
+                <Label Text="Descripción:" Grid.Column="0" Grid.Row="2" FontSize="18" VerticalOptions="End"/>
+                <Entry Grid.Column="1" Grid.Row="2" VerticalOptions="End" Text="{Binding Descripcion}"/>
+
+                <Label Text="Precio:" Grid.Column="0" Grid.Row="3" FontSize="18" VerticalOptions="End"/>
+                <Entry Grid.Column="1" Grid.Row="3" VerticalOptions="End" Text="{Binding Precio}"/>
+
+                <Label Text="Stock:" Grid.Column="0" Grid.Row="4" FontSize="18" VerticalOptions="End"/>
+                <Entry Grid.Column="1" Grid.Row="4" VerticalOptions="End" Text="{Binding Stock}"/>
+
+                <Label Text="Categoria:" Grid.Column="0" Grid.Row="5" FontSize="18" VerticalOptions="End" />
+                <Picker
+                    Grid.Column="1" Grid.Row="5" VerticalOptions="End"
+                    FontSize="Small"
+                    TextColor="#FFC9AC"                   
+                    x:Name="CategoriaPicker"
+                    ItemDisplayBinding="{Binding Value}"
+                    SelectedItem="{Binding CategoriaSeleccionada}"
+                    ItemsSource="{Binding ListaCategorias}"/>
+
+                <Label Text="Imagen" Grid.Column="0" FontSize="18" Grid.Row="6" VerticalOptions="End"/>
+                <Entry Grid.Column="1" Grid.Row="6" VerticalOptions="End" Text="{Binding Imagen}"/>
+
+                <Button 
+                    Command="{Binding GrabarProductoCommand}"
+                    Text="Crear Producto" 
+                    Grid.Row="7" 
+                    Grid.ColumnSpan="2" 
+                    VerticalOptions="End"
+                    Margin="0,130,0,0"
+                    FontAttributes="Bold"
+                    BackgroundColor="#FFC9AC"/>
+                <Button 
+                    Command="{Binding CancelarCommand}"
+                    Text="Cancelar" 
+                    Grid.Row="8" 
+                    FontAttributes="Bold"
+                    Margin="0,0,0,0"
+                    Grid.ColumnSpan="2" 
+                    VerticalOptions="End"
+                    BackgroundColor="#C16300"/>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

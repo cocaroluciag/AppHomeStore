@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppHomeStore.Views.ModificarCarritoPage"
+             Title="{Binding Title}">
+
+    <ScrollView>
+        <VerticalStackLayout Margin="10" BackgroundColor="#4C2F1D">
+            <Grid ColumnDefinitions=".3*,.7*" RowDefinitions="*,*,*,*,*,*,*,*,*" RowSpacing="5">
+
+                <Label 
+              Margin="0,5,0,10"
+              Text="Modificar Carrito" 
+              FontSize="Large" 
+              HorizontalOptions="Center" 
+              Grid.ColumnSpan="2" 
+              TextColor="Orange" />
+
+                <Label Text="Cantidad Producto: " Grid.Column="0" Grid.Row="1" VerticalOptions="End" />
+                <Entry Grid.Column="1" Grid.Row="1" VerticalOptions="End" Text="{Binding Cantidad}"/>
+
+                <Button 
+            Command="{Binding GrabarCommand}"
+            Text="Grabar" 
+            Grid.Row="7" 
+            Grid.ColumnSpan="2" />
+                <Button 
+            Command="{Binding CancelarCommand}"
+            Text="Cancelar" 
+            Grid.Row="8" 
+            Grid.ColumnSpan="2" 
+            BackgroundColor="SaddleBrown" 
+            TextColor="White"/>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
